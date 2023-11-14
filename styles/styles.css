@@ -149,3 +149,68 @@ nav > img{
   font-weight: 800;
 }
 
+/* NEW SECTION  */
+
+.video{
+  height: 140vh;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f1f2f3;
+}
+
+.video-top{
+  width: 88%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-left: 15px;
+}
+
+.dots{
+  width: 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dot{
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  padding-bottom: 20px;
+}
+
+.black{background-color:  #363738;}
+.grey{background-color: #b8bbbe;}
+.green{background-color: #28eea7;}
+
+.video-span{
+  color: #28eea7;
+  font-size: 38px;
+  font-weight: 900;
+}
+
+.video-top > p{
+  font-size: 28px;
+  font-weight: 900;
+  padding-bottom: 20px;
+  color: #363738;
+}
+
+.vid-container{
+  width: 90%;
+  height: 90%;
+  background-image: url("https://www.youtube.com/embed/vG7SYQjODTs?rel=0&amp;controls=1&amp;autoplay=0&amp;mute=0&amp;start=0") ;
+}
+
+.you-vid{
+  width: 100%;
+  height: 95%;
+  border: 15px solid #28eea7;
+  border-radius: 20px; 
+}
