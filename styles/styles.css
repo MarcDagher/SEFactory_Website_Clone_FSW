@@ -538,7 +538,7 @@ nav > img{
   justify-content: space-evenly;
   background-color: #232323;
   padding: 15px 0px 15px 35px;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 
 .recruitment-partner > p:nth-child(1){
@@ -593,11 +593,145 @@ nav > img{
   background-color: #232323;
   gap: 20px;
   padding: 15px 25px;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 
 .launch-team > p{
   font-size: 22px;
   text-align: center;
   color: #e0e0e2;
+}
+
+/* NEW SECTION  */
+
+.testimonials{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e0e0e2;
+  gap: 30px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+
+}
+
+.testimonials-top{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px 0;
+}
+
+.testimonials-top > p{
+  font-size: 28px;
+  font-weight: 900;
+  padding: 3px 20px;
+  color: white;
+  background-color: #363738;
+}
+
+.testimonials-span{
+  color: #28eea7;
+  font-size: 34px;
+  font-weight: 900;
+}
+
+.testimonials-box{
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #363738;
+  padding: 20px;
+  gap: 100px;
+  border-radius: 30px;
+}
+
+.testimonials-box-col{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 0 0 0 40px;
+}
+
+.testimonials-text-quotes{
+  height: 80px;
+  width: 80px;
+}
+
+.testimonials-text-quotes > img{
+  height: 100%;
+  width: 100%;
+}
+
+.testimonials-box-col > p{
+  color: #b8bbbe;
+  font-size: 18px;
+}
+
+.testimonials-box-footer{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.testimonials-footer-text > p:first-of-type{
+  color: #F1F2F3;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.testimonials-footer-text > p:last-of-type{
+  color: #F1F2F3;
+}
+
+
+.testimonials-img-small{
+  height: 60px;
+  width: 60px;
+}
+
+.testimonials-img-small > img{
+  height: 100%;
+  width: 100%;
+  border-radius: 40px ;
+}
+
+
+.testimonials-img-large > img{
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 10px
+}
+
+.click-dots{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 25px;
+  gap: 30px;
+}
+
+.mini-dot{
+  height: 10px;
+  width: 10px;
+  background-color: #b8bbbe;
+  border-radius: 50%;
+}
+
+.mini-dot:hover{
+  cursor: pointer;
 }
