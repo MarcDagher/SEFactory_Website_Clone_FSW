@@ -5,8 +5,7 @@ const colors = ["#28EEA7ED", "#FB508EED", "#9864DAED"]
 
 const h1_black = document.getElementById("h1-black")
 const p_black = document.getElementById("p-black")
-console.log(h1_black)
-console.log(p_black)
+
 let color = 0
 
 const change_color = () => {
@@ -108,3 +107,56 @@ hamburger_btn_hide.addEventListener("click", () => {
   hamburger_wrapper.classList.toggle("hide")
 })
 
+// Testimonials Sliding images
+
+const testimonials_container = document.getElementById("testimonials-container")
+const dots = document.getElementsByClassName("mini-dot")
+const dot_1 = document.getElementsByClassName("mini-dot")[0]
+const dot_2 = document.getElementsByClassName("mini-dot")[1]
+const dot_3 = document.getElementsByClassName("mini-dot")[2]
+const dot_4 = document.getElementsByClassName("mini-dot")[3]
+
+
+dot_1.addEventListener("click", () => {
+  testimonials_container.style.transform = "translateX(38.5%)"
+  for (i=0 ; i<4 ; i++){
+    dots[i].classList.remove("active")
+  }
+  dot_1.classList.add("active")
+})
+
+dot_2.addEventListener("click", () => {
+  testimonials_container.style.transform = "translateX(13%)"
+  for (i=0 ; i<4 ; i++){
+    dots[i].classList.remove("active")
+  }
+  dot_2.classList.add("active")
+})
+
+dot_3.addEventListener("click", () => {
+  testimonials_container.style.transform = "translateX(-12.5%)"
+  for (i=0 ; i<4 ; i++){
+    dots[i].classList.remove("active")
+  }
+  dot_3.classList.add("active")
+})
+
+dot_4.addEventListener("click", () => {
+  testimonials_container.style.transform = "translateX(-38%)"
+  for (i=0 ; i<4 ; i++){
+    dots[i].classList.remove("active")
+  }
+  dot_4.classList.add("active")
+})
+
+
+// Timed changing of image position
+const x_list = ["translateX(38.5%)","translateX(13%)","translateX(-12.5%)","translateX(-38%)"]
+let position = 0
+
+const change_position = () => {
+  if (position == 4) {position = 0}
+  testimonials_container.style.transform = x_list[position]
+  position ++
+}
+setInterval(change_position, 7000)
