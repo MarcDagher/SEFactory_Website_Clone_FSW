@@ -7,7 +7,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/styles.css">
+
+  <link rel="stylesheet" href="./styles/[1] intro.css">
+  <link rel="stylesheet" href="./styles/[2] video.css">
+  <link rel="stylesheet" href="./styles/[3] milestones.css">
+  <link rel="stylesheet" href="./styles/[4] programs.css">
+  <link rel="stylesheet" href="./styles/[5] recruitment.css">
+  <link rel="stylesheet" href="./styles/[6] testimonials.css">
+  <link rel="stylesheet" href="./styles/[7] faq.css">
+  <link rel="stylesheet" href="./styles/[8] contact-us.css">
 </head>
 <body>
 
@@ -18,11 +26,11 @@
     </nav>
 
     <div class="intro-left-col">
-      <div class="color-background">
+      <div class="color-background" id="color-background">
         <div class="learn">
-          <h1>Want To Become A</h1>
-          <span>Software Engineer</span>
-          <p>Jumpstart your journey in tech with our courses in Computer Science, Full-Stack Web development, Data Engineering and UI/UX Design. Get hands-on experience and gain essential skills for a successful tech career.</p>
+          <h1 >Want To Become A</h1>
+          <span id="h1-black">Software Engineer</span>
+          <p id="p-black">Jumpstart your journey in tech with our courses in Computer Science, Full-Stack Web development, Data Engineering and UI/UX Design. Get hands-on experience and gain essential skills for a successful tech career.</p>
           <a href="https://www.sefactory.io/#programs">#GET_TRAINED</a>
         </div>
       </div>
@@ -103,7 +111,7 @@
     </div>
   </section>
 
-  <section class="programs">
+  <section id="programs-bg" class="programs">
 
     <div class="programs-top">
       <p> <span class="programs-span">></span> Programs</p>
@@ -115,32 +123,89 @@
     </div>
 
     <div class="programs-container">
-      <div class="programs-nav">
-        <a href="https://www.sefactory.io/#w-tabs-0-data-w-pane-0" >FCS</a>
-        <a href="https://www.sefactory.io/#w-tabs-0-data-w-pane-1">FSW</a>
-        <a href="https://www.sefactory.io/#w-tabs-0-data-w-pane-2" >FSD</a>
-        <a href="https://www.sefactory.io/#w-tabs-0-data-w-pane-3" >UIX</a>
+      <div class="programs-nav" id="programs-nav">
+        <p id="nav-fcs" class="programs-nav-fcs">FCS</p>
+        <p id="nav-fsw">FSW</p>
+        <p id="nav-fsd">FSD</p>
+        <p id="nav-uix">UIX</p>
       </div>
-      <div class="programs-box">
 
+      <div class="programs-box-fcs" id="programs-box-fcs">
         <div class="programs-box-text-divider">
           <div class="programs-box-text">
-            <p><span class="yellow-text">> FCS:</span> Foundations of Computer Science</p>
+            <p><span class="yellow-text" id="box-text">> FCS:</span> Foundations of Computer Science</p>
             <p>// This 9-week course covers fundamental topics in computer science, including data structures, algorithms, and foundational concepts. It is suitable for coding enthusiasts, former computer science students, and beginners who wish to learn Python programming, object-oriented programming, file systems, and more. The course includes online video materials, assignments, and instructor-led sessions.</p>
           </div>
           <div class="programs-box-bottom-text">
             <div class="next">
-              <p>next course date | <span class="yellow-text-s">To be confirmed</span></p>
+              <p>next course date | <span class="yellow-text-s" id="box-text-s">To be confirmed</span></p>
             </div>
             <a href="https://www.sefactory.io/fcs" class="learn-more">LEARN MORE ></a>
           </div>
         </div>
 
-        <div class="programs-img">
+        <div class="programs-img-fcs">
           <img src="./images/FCS.png" alt="FCS">
         </div>
-
       </div>
+
+      <div class="programs-box-fsw js-display" id="programs-box-fsw">
+        <div class="programs-box-text-divider">
+          <div class="programs-box-text">
+            <p><span class="fsw-green-txt" id="box-text">> FSW:</span> Full-Stack Web Development</p>
+            <p>// Our 14-week bootcamp is designed to equip aspiring developers with the technical and interpersonal skills needed to become professional software engineers. Participants will learn essential concepts such as Version Control, Object-Oriented Programming, Database Management Systems, MVC Design Patterns, Dependency Management, modern Web Frameworks, and AWS. The program also includes a soft-skills curriculum covering Communication & Interpersonal Skills, Professional Writing, Technical Presentations, Negotiation, and Interviewing, which will be taught through lectures, weekly projects, tech talks, and a final project to showcase their learning.</p>
+          </div>
+          <div class="programs-box-bottom-text">
+            <div class="next">
+              <p>next bootcamp date | <span class="fsw-green-txt" id="box-text-s">To be confirmed</span></p>
+            </div>
+            <a href="https://www.sefactory.io/fcs" class="learn-more">LEARN MORE ></a>
+          </div>
+        </div>
+
+        <div class="programs-img-fcs">
+          <img src="./images/fsw.png" alt="FSW">
+        </div>
+      </div>
+
+      <div class="programs-box-fsd js-display" id="programs-box-fsd">
+        <div class="programs-box-text-divider">
+          <div class="programs-box-text">
+            <p><span class="fsd-purple-txt" id="box-text">> FSD:</span> Full-Stack Data</p>
+            <p>// SE Factory's 12-week Full-Stack Data course offers robust training in data analysis and engineering. Participants learn to handle large data sets with Python and use libraries like Pandas, NumPy, and Matplotlib for data manipulation and visualization. The course also delves into cloud orchestration, distributed computing, relational databases, and SQL basics. Hands-on projects provide real-world data analysis experience. Upon completion, students gain proficiency in Python for analytics, understand data warehousing, and can effectively visualize and present data insights.</p>
+          </div>
+          <div class="programs-box-bottom-text">
+            <div class="next">
+              <p>next bootcamp date | <span class="fsd-purple-txt" id="box-text-s">To be confirmed</span></p>
+            </div>
+            <a href="https://www.sefactory.io/fcs" class="learn-more">LEARN MORE ></a>
+          </div>
+        </div>
+
+        <div class="programs-img-fcs">
+          <img src="./images/fsd.png" alt="FSD">
+        </div>
+      </div>
+
+      <div class="programs-box-uix js-display" id="programs-box-uix">
+        <div class="programs-box-text-divider">
+          <div class="programs-box-text">
+            <p><span class="uix-pink-txt" id="box-text">> UIX:</span> UI/UX Design Bootcamp</p>
+            <p>// SE Factory's 6-week UI/UX course offers immersive learning in UI/UX design. It encompasses the essentials of UI/UX, from mastering Figma, color psychology, typography to UX heuristics, prototyping and WCAG guidelines. Learners work on projects, transforming wireframes into mockups, and creating responsive interfaces. The course culminates in a final project, enabling students to conduct a thorough UX audit, revamp a website, and create a well-documented case study. Graduates leave equipped with a polished portfolio and market-ready skills in UI/UX design.</p>
+          </div>
+          <div class="programs-box-bottom-text">
+            <div class="next">
+              <p>next bootcamp date | <span class="uix-pink-txt" id="box-text-s">To be confirmed</span></p>
+            </div>
+            <a href="https://www.sefactory.io/fcs" class="learn-more">LEARN MORE ></a>
+          </div>
+        </div>
+
+        <div class="programs-img-fcs">
+          <img src="./images/uix.png" alt="UIX">
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -323,8 +388,7 @@
         </div>
       </form>
     </div>
-
   </section>
-
+<script src="./script/script.js"></script>
 </body>
 </html>

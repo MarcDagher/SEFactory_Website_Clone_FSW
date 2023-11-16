@@ -1,0 +1,231 @@
+/* NEW SECTION  */
+.programs{
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFC635;
+  padding-bottom: 80px;
+  padding-top: 50px;
+  gap: 50px;
+}
+
+.programs-top{
+  width: 90%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.programs-top > p{
+  font-size: 28px;
+  font-weight: 900;
+  padding: 3px 20px;
+  color: white;
+  background-color: #363738;
+}
+
+.programs-span{
+  color: #28eea7;
+  font-size: 34px;
+  font-weight: 900;
+}
+
+
+.programs-container{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.programs-nav{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.programs-nav > p{
+  font-weight: 900;
+  font-size: 18px;
+  text-decoration: none;
+  color: #232323;
+  padding:20px 50px ;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+}
+
+.programs-nav > p:hover{
+  cursor: pointer;
+}
+
+/* // for js  */
+.programs-nav-fcs{
+  color: #FFC635 !important;
+  background-color: #363738;
+}
+.programs-nav-fsw{
+  color: #28eea7 !important;
+  background-color: #363738;
+}
+.programs-nav-fsd{
+  color: #9764da !important;
+  background-color: #363738;
+}
+.programs-nav-uix{
+  color: #fb508f !important;
+  background-color: #363738;
+}
+
+/* // display hidden JS */
+.programs-box-fcs{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #363738;
+  padding: 0 20px 10px 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.programs-box-text-divider{
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.programs-box-text{
+  width: 100%;
+  max-width: 700px;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.programs-box-text > p:first-of-type{
+  font-weight: 900;
+  font-size: 24px;
+  color: white;
+}
+
+.yellow-text{
+  color: #FFC635;
+}
+
+.programs-box-text > p:nth-child(2){
+  font-size: 15px;
+  color: #e0e0e2;
+}
+
+.programs-box-bottom-text{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.next{
+  background-color: #232323;
+  padding: 10px 20px ;
+  color: white;
+}
+
+.yellow-text-s{
+  color: #FFC635; 
+  font-weight: 900;
+}
+
+.learn-more{
+  color: white;
+  font-weight: 900;
+  font-size: 16px;
+  text-align: right;
+  padding: 9px 10px;
+  background-color: #232323;
+  width: 38%;
+  text-decoration: none;
+}
+
+.programs-img-fcs{
+  height: 100%;
+  width: 32%;
+  padding-top: 8px;
+}
+
+.programs-img-fcs > img{
+  height: 400px;
+  width: 400px;
+  object-fit:fill ;
+  border-radius: 7px;
+}
+
+/* JS Programs Section Display Hidden */
+.programs-box-fsw{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #363738;
+  padding: 0 20px 10px 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.fsw-green-txt{
+  color: #28eea7;
+  font-weight: 900;
+}
+
+.programs-box-fsd{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #363738;
+  padding: 0 20px 10px 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.fsd-purple-txt{
+  color: #9764da;
+  font-weight: 900;
+}
+
+.programs-box-uix{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #363738;
+  padding: 0 20px 10px 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.uix-pink-txt{
+  color: #fb508f;
+  font-weight: 900;
+}
+
+.js-display{
+  display: none;
+}
