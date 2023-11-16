@@ -90,3 +90,21 @@ function showSection(section) {
       // programs_bg.style.backgroundColor = "#fb508f"
     }
 }
+
+
+// hamburger menu
+
+const hamburger_wrapper = document.getElementById("ham-wrapper")
+const hamburger_btn_show = document.getElementById("hamburger-btn-show")
+const hamburger_btn_hide = document.getElementById("hamburger-btn-hide")
+
+hamburger_btn_show.addEventListener("click", () => {
+  console.log("ham clicked")
+  hamburger_wrapper.classList.toggle("hide")
+})
+
+hamburger_btn_hide.addEventListener("click", () => {
+  console.log("ham clicked")
+  hamburger_wrapper.classList.toggle("hide")
+})
+

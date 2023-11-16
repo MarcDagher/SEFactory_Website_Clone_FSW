@@ -34,9 +34,6 @@ nav > img{
   width: 50px;
   background-color: rgb(85, 85, 85);
   border-radius: 10px;
-}
-
-nav > img:hover{
   cursor: pointer;
 }
 
