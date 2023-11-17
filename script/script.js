@@ -38,18 +38,17 @@ const programs_box_fsw = document.getElementById("programs-box-fsw");
 const programs_box_fsd = document.getElementById("programs-box-fsd");
 const programs_box_uix = document.getElementById("programs-box-uix");
 
-let currentSection = "nav-fcs";
+let current_section = "nav-fcs";
 
-programs_nav.addEventListener("click", function changeSection(e) {
-  console.log(e.target.id)
-  if (e.target.id !== currentSection && e.target.id !== "programs-nav") {
-    hideSection(currentSection);
-    showSection(e.target.id);
-    currentSection = e.target.id;
+programs_nav.addEventListener("click", function Change_Section(e) {
+  if (e.target.id !== current_section && e.target.id !== "programs-nav") {
+    Hide_Section(current_section);
+    show_section(e.target.id);
+    current_section = e.target.id;
   }
 });
 
-function hideSection(section) {
+function Hide_Section(section) {
   if (section === "nav-fcs") {
     nav_fcs.classList.remove("programs-nav-fcs");
     programs_box_fcs.style.display = "none";
@@ -65,7 +64,7 @@ function hideSection(section) {
   }
 }
 
-function showSection(section) {
+function show_section(section) {
     if (section == "nav-fcs"){
       nav_fcs.classList.add("programs-nav-fcs");
       programs_box_fcs.style.display = "flex";
@@ -98,12 +97,10 @@ const hamburger_btn_show = document.getElementById("hamburger-btn-show")
 const hamburger_btn_hide = document.getElementById("hamburger-btn-hide")
 
 hamburger_btn_show.addEventListener("click", () => {
-  console.log("ham clicked")
   hamburger_wrapper.classList.toggle("hide")
 })
 
 hamburger_btn_hide.addEventListener("click", () => {
-  console.log("ham clicked")
   hamburger_wrapper.classList.toggle("hide")
 })
 
@@ -155,8 +152,14 @@ const x_list = ["translateX(38.5%)","translateX(13%)","translateX(-12.5%)","tran
 let position = 0
 
 const change_position = () => {
-  if (position == 4) {position = 0}
+  if (position > 3) {position = 0}
   testimonials_container.style.transform = x_list[position]
+
+  for (i=0 ; i<4 ; i++){
+    dots[i].classList.remove("active")
+  }
+  dots[position].classList.add("active")
+  
   position ++
 }
 setInterval(change_position, 7000)

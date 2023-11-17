@@ -221,3 +221,41 @@ textarea{
 .cuf-submit:hover{
   cursor: pointer;
 }
+
+
+@media (max-width: 1030px) {
+  .contact-us-boxes{
+    flex-direction: column;
+  }
+  .contact-us-directions{
+    max-width: 100%;
+  }
+  iframe{
+    min-width: 750px;
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 850px){
+  iframe{
+    min-width: 550px;
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 650px){
+  iframe{
+    min-width: 450px;
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 550px){
+  iframe{
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .contact-us-directions {
+    min-height: 100%;
+}
+}

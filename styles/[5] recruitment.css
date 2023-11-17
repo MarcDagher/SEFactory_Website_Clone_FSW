@@ -110,3 +110,14 @@
   text-align: center;
   color: #e0e0e2;
 }
+
+@media (max-width: 800px ) {
+  .recruitment-partner{
+    gap: 40px;
+    padding: 35px;
+  }
+
+  .launch-team{
+    flex-direction: column;
+  }
+}
