@@ -27,7 +27,7 @@ const change_color = () => {
 setInterval(change_color, 5000)
 
 // Programs section: on click change section 
-const programs_bg = document.getElementById("programs_bg")
+const programs_bg = document.getElementById("programs-bg")
 const programs_nav = document.getElementById("programs-nav");
 const nav_fcs = document.getElementById("nav-fcs");
 const nav_fsw = document.getElementById("nav-fsw");
@@ -68,24 +68,24 @@ function show_section(section) {
     if (section == "nav-fcs"){
       nav_fcs.classList.add("programs-nav-fcs");
       programs_box_fcs.style.display = "flex";
-      // programs_bg.style.backgroundColor = "#FFC635"
+      programs_bg.style.backgroundColor = "#FFC635"
     }
       
     else if (section == "nav-fsw"){
       nav_fsw.classList.add("programs-nav-fsw");
       programs_box_fsw.style.display = "flex";
-      // programs_bg.style.backgroundColor = "#28eea7"
+      programs_bg.style.backgroundColor = "#28eea7"
     }
     
     else if (section == "nav-fsd"){
       nav_fsd.classList.add("programs-nav-fsd");
       programs_box_fsd.style.display = "flex";
-      // programs_bg.style.backgroundColor = "#9764da"
+      programs_bg.style.backgroundColor = "#9764da"
     }
     else if (section == "nav-uix"){
       nav_uix.classList.add("programs-nav-uix");
       programs_box_uix.style.display = "flex";
-      // programs_bg.style.backgroundColor = "#fb508f"
+      programs_bg.style.backgroundColor = "#fb508f"
     }
 }
 
